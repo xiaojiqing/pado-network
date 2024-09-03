@@ -1,0 +1,62 @@
+#
+# Global
+#
+NODE_NAME="xiaojiqing"
+NODE_DESCRIPTION="Your Node Name's Description"
+
+ENABLE_EIGEN_LAYER=true
+#
+# EigenLayer
+#
+# ETH_RPC_URL=https://rpc-holesky.rockx.com
+ETH_RPC_URL=https://ethereum-holesky-rpc.publicnode.com
+
+REGISTRY_COORDINATOR_ADDRESS=0x633fB25043540Cd51ac5Fa6E3Bf41cfde068c579
+
+#
+# PADO Management Contracts
+#
+DATA_MANAGEMENT_ADDRESS=0xE48d23f3d21e2df9F5B7317BC1b0d35FFC801289
+TASK_MANAGEMENT_ADDRESS=0xdd915b9e28e4356771E63469BbdF888264BB5b87
+WORKER_MANAGEMENT_ADDRESS=0x05cB7A91269A436b2C184F1Fc3A5Bf8A53566387
+ROUTER_ADDRESS=0x5c8b1B4998F675e1D8781D34976c8292AB3B1bC7
+#
+# ECDSA and BLS KEY
+# If you have some special characters in password, make sure to use single quotes
+#
+ECDSA_KEY_FILE='/home/ubuntu/.eigenlayer/operator_keys/operator.ecdsa.key.json'
+ECDSA_KEY_PASSWORD='Ubuntu123!@#'
+
+BLS_KEY_FILE='/home/ubuntu/.eigenlayer/operator_keys/operator.bls.key.json'
+BLS_KEY_PASSWORD='Ubuntu123!@#'
+
+#
+# LHE KEY
+# For task: data sharing
+#
+LHE_KEY_PATH='/home/ubuntu/test/test_js2/pado-network/padonode/lhe.key.json'
+
+#
+# AR Wallet, for storage
+#
+AR_WALLET_PATH='/path/to/your/arwallet.json'
+
+#
+# Register as Operator on EigenLayer by calling `DelegationManager.registerAsOperator`
+#
+# The address that will receive earnings as the Operator provides services to AVSs. Default: wallet.address
+EARNINGS_RECEIVER_ADDRESS='0x17b0f76da804f6aab3a4ca8448040a4d78e1a719'
+# The Delegation Approver. Default: address(0).
+# See: https://docs.eigenlayer.xyz/eigenlayer/operator-guides/operator-installation#delegationapprover-design-patterns
+DELEGATION_APPROVER_ADDRESS=
+# The metadata url of the operator. Default: ""
+METADATA_URI='https://raw.githubusercontent.com/xiaojiqing/pado-network-contracts/test/metadata.json'
+
+#
+# For `RegistryCoordinator.registerOperatorInQuorumWithAVSRegistryCoordinator`
+#
+# Time after which the operator's signature becomes invalid. Default: 3600
+OPERATOR_SIGNATURE_EXPIRY_SECONDS=
+# The operator socket. Default: ""
+OPERATOR_SOCKET_IP_PORT=
+
